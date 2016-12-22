@@ -6,6 +6,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	position: relative;
 }
 
 #video {
@@ -17,6 +18,7 @@ body, html {
 	min-width: 100%;
 	height: calc(100vw / (16 / 9));
 	width: calc(100vh * 16 / 9);
+	overflow: hidden;
 }
 
 #tixx {
@@ -41,24 +43,16 @@ body, html {
 }
 
 #merry {
-	top: 15%;
+	top: 5%;
 }
 
 #xmas {
-	bottom: 15%;
+	bottom: 5%;
 }
 
 @media (min-width: 450px) {
 	#merry, #xmas {
 		font-size: 5em;
-	}
-
-	#merry {
-		top: 10%;
-	}
-
-	#xmas {
-		bottom: 10%;
 	}
 }
 
@@ -66,12 +60,13 @@ body, html {
 	#merry, #xmas {
 		font-size: 7em;
 	}
+}
 
-	#merry {
-		top: 5%;
-	}
-
-	#xmas {
-		bottom: 5%;
-	}
+#citation {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 0.75em;
+	color: rgba(255, 255, 255, 0.3);
 }
