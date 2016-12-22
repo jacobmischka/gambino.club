@@ -1,0 +1,8 @@
+{
+  "name": "gambino.club",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jacobmischka/gambino.club.git",
+  "author": "Jacob Mischka <jacobmischka@gmail.com>",
+  "license": "MIT"
+}

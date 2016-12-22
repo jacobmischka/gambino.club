@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-height: 100%;
+	min-width: 100%;
+	height: calc(100vw / (16 / 9));
+	width: calc(100vh * 16 / 9);
+}
+
+#tixx {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-height: 50%;
+	max-width: 75%;
+	transform: translate(-50%, -50%);
+	opacity: 0.65;
+	pointer-events: none;
+}
+
+#merry, #xmas {
+	font-family: "Space Mono", sans-serif;
+	position: absolute;
+	color: white;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	font-size: 4em;
+}
+
+#merry {
+	top: 15%;
+}
+
+#xmas {
+	bottom: 15%;
+}
+
+@media (min-width: 450px) {
+	#merry, #xmas {
+		font-size: 5em;
+	}
+
+	#merry {
+		top: 10%;
+	}
+
+	#xmas {
+		bottom: 10%;
+	}
+}
+
+@media (min-width: 650px) {
+	#merry, #xmas {
+		font-size: 7em;
+	}
+
+	#merry {
+		top: 5%;
+	}
+
+	#xmas {
+		bottom: 5%;
+	}
+}
